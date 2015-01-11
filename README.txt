@@ -1,30 +1,8 @@
-# Node.js Starter Application
+# Node.js Sample Application
 
-Bluemix provides a Node.js starter application as a template so that you can add your code and push the changes back to the Bluemix environment.
+This App uses the MongoDB-Lab Service to initiate a service to save names and seach for them at a mongodb repository
+The user name + user pw for mongodb service was replaced
+For question please contact me through: robin.schlenker@web.de
+The original Service is online at:
 
-
-## Files
-
-The Node.js starter application has files as below:
-
-*   instructions.md
-
-	This file describes the Next Steps for getting started with this template.
-
-*   app.js
-
-	This file contains the server side JavaScript code for your application written using the Node.js API
-
-*   views/
-
-	This directory contains the views of the application. It is required by the express framework and jade template engine in this sample application.
-
-*   public/
-
-	This directory contains public resources of the application. It is required by the express framework in this sample application.
-
-*   package.json
-
-	This file is required by the Node.js environment. It specifies this Node.js project name, dependencies, and other configurations of your Node.js application.
-
-
+mongodbsample.mybluemix.net
