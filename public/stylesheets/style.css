@@ -1,0 +1,78 @@
+/* style.css
+ * This file provides css styles.
+ */
+
+body,html {
+	background-image: url(/images/background.png);
+	background-size: 100% auto;
+	height: 100%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #ffffff;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #154B25;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+h1 {
+	font-weight: bold;
+	font-size: 2em;
+}
+.link {
+	font-weight: bold;
+	font-size: 1em;
+}
+.userlist {
+	list-style: none;
+	}
+.userlist li {
+		text-align: left;
+	}
+.button {
+	width: 10em;
+	height: 2em;
+	background-color: #585858;
+	color: white;
+	font-weight: bold;
+	border-style: none;
+}
+input {
+	width: 20em;
+}
+.fat {
+	font-weight: bold;
+}
+#critical {
+	background-color: #B40404;
+}
+#status {
+	background-color: #585858;
+	width: 15em;
+	padding: 5px;
+	float: left;
+	position: relative;
+	top: -20em;
+	left: -1em;
+}
+#top {
+	color: white;
+}
+#top:hover{
+	text-decoration: none;
+	}
+#window {
+	width: 25em;
+	height: 30em;
+	background-color: #0B2161;
+	position: relative;
+	top: 10em;
+	left: 40em;
+	opacity: 0.98;
+}

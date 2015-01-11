@@ -1,0 +1,66 @@
+<!Doctype html>
+<html>
+ <head> 
+ 	<title>Index</title>
+ 	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css"></link>
+ 	<link rel="shortcut icon" href="/images/icon.png" />
+ </head>
+ <body>
+ <div id="window">
+ <br />
+ <a href="/" id="top"><h1>Welcome to my <br />Mongodb-Sample</h1></a>
+ <form action = "/search" method= "post"> 	
+ 	<input class="button" type="button" onClick="go()" value="EasyFill"/>
+ 	<input class="button" type="button" onClick="change()" value="Change values"/>
+ 	<br />
+ 	<p>Search for User:</p>
+ 	<input type="text" name="firstname" id="firstname" size="30" placeholder="Firstname" value="<%= plc1 %>" required/>
+ 	<br />
+ 	<br />
+ 	<input type="text" name="lastname" id="lastname" size="30" placeholder="Lastname" value="<%= plc2 %>" required/>
+ 	<br />
+ 	<br />
+ 	<input class="button" type="submit" value="Search"/>	
+ 	<div>
+ 	<br />
+ 	<button class="button" type="button" onclick="window.location.href='/adduser'">Add new user</button>
+ 	</div>
+ 	<br />
+ </form>
+
+  <form method="post" action="/showuser">
+ 	<input class="button" type="submit" value="Show all user"/>
+ </form>
+ <br />
+ <form method="post" action="/delete">
+ 	<input class="button" id="critical" type="submit" value="Delete all data"/>
+ </form>
+ </div>
+ <div id="status" style="display: <%=hide%>;">
+ <ul class="userlist">
+ 	<li class="fat"> <%= title %> </li>
+ 	<li> </li>
+	<% for(var i=0; i<names.length; i++) {%>
+	<li><%= names[i] %></li>
+	<% } %>
+</ul>
+</div>
+
+
+ <script type="text/javascript">
+ function go() {
+ 	var firstname = prompt("What is your prename?");
+ 	var lastname = prompt("What is your last name?");
+ 	document.getElementById('firstname').value = firstname;
+ 	document.getElementById('lastname').value = lastname;
+ }
+ function change() {
+ 	var lastname = document.getElementById('lastname').value;
+ 	var firstname = document.getElementById('firstname').value;
+ 	document.getElementById('firstname').value = lastname;
+ 	document.getElementById('lastname').value = firstname;
+ }
+ </script>
+
+ </body>
+</html>
